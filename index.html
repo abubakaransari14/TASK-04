@@ -1,0 +1,25 @@
+<html>
+<head>
+</head>
+<body>
+    
+<h1 id = 'rotate'></h1>
+
+<script>
+    let myVar = setInterval(myFunction, 1000);
+        
+    let word = 'Saylani';
+    let newArray = word.split('');
+
+    function myFunction() {
+        let Name = newArray.pop();
+        let newWord = newArray.unshift(Name);
+        let Word = newArray.join('');
+        console.log(Word);
+        document.getElementById('rotate').innerHTML = Word;
+}
+  </script>
+  
+ 
+</body>
+</html>
